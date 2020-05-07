@@ -1,0 +1,3 @@
+[submodule "src/Common"]
+	path = src/Common
+	url = git@github.com:UsefulPHP/common.git
