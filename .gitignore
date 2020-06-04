@@ -1,0 +1,8 @@
+# IDE artifacts
+.buildpath
+.project
+.settings/
+
+# Composer
+vendor/*
+
