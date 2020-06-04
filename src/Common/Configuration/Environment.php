@@ -1,14 +1,13 @@
-<?php declare(strict_types=1);
-
-
+<?php
+declare(strict_types = 1);
 namespace Useful\Common\Configuration;
-
 
 use Useful\Common\Configuration\Exception\EnvironmentException;
 use Useful\Common\Configuration\Importer\ImporterInterface;
 
 class Environment
 {
+
     private static array $variables = [];
 
     public static function has(string $key): bool
@@ -18,7 +17,7 @@ class Environment
 
     public static function isImportant(string $key): bool
     {
-        if (!static::has($key)) {
+        if (! static::has($key)) {
             throw new EnvironmentException('ENV_VAR_NOT_FOUND');
         }
         return static::$variables[$key]['important'];
@@ -40,7 +39,7 @@ class Environment
                 throw new EnvironmentException('CANNOT_OVERWRITE_IMPORTANT_ENV');
             }
         }
-        if (!static::validateKey($key)) {
+        if (! static::validateKey($key)) {
             throw new EnvironmentException('INVALID_ENV_KEY');
         }
         static::$variables[$key]['important'] = $important;
@@ -62,6 +61,4 @@ class Environment
             static::set($key, $value, $important);
         }
     }
-
-
 }

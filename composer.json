@@ -1,42 +1,42 @@
 {
-  "name": "useful/useful",
-  "description": "Useful for PHP",
-  "keywords": [
-    "PHP",
-    "framework"
-  ],
-  "authors": [
-    {
-      "name": "Lauren Black",
-      "email": "lauren@laurenblack.co.uk",
-      "role": "Developer"
-    }
-  ],
-  "license": "AGPL-3.0-or-later",
-  "autoload": {
-    "psr-4": {
-      "Useful\\": "src"
-    }
-  },
-  "require": {
-    "php": "^7.4",
-    "psr/container":  "^1.0",
-    "m1/env": "^2.2"
-  },
-  "require-dev": {
-    "phpunit/phpunit": "~9.1"
-  },
-  "replace": {
-    "useful/common": "self.version"
-  },
-  "extra": {
-    "branch-alias": {
-      "dev-master": "1.x-dev"
-    }
-  },
-  "minimum-stability": "dev",
-  "config": {
-    "prefer-install": "dist"
-  }
+	"name": "useful/useful",
+	"description": "Useful for PHP",
+	"keywords": [
+		"PHP",
+		"framework"
+	],
+	"authors": [
+		{
+			"name": "Lauren Black",
+			"email": "lauren@laurenblack.co.uk",
+			"role": "Developer"
+		}
+	],
+	"license": "AGPL-3.0-or-later",
+	"autoload": {
+		"psr-4": {
+			"Useful\\": "src"
+		}
+	},
+	"require": {
+		"php": "^7.4",
+		"psr/container": "^1.0",
+		"m1/env": "^2.2"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "~9.1"
+	},
+	"replace": {
+		"useful/common": "self.version"
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "1.x-dev"
+		}
+	},
+	"minimum-stability": "dev",
+	"config": {
+		"prefer-install": "dist"
+	}
 }
 

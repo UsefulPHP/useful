@@ -1,15 +1,15 @@
-<?php declare(strict_types=1);
-
-
+<?php
+declare(strict_types = 1);
 namespace Useful\Controller;
-
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Log\LoggerInterface;
 
 abstract class AbstractController implements ControllerInterface
 {
+
     private ResponseInterface $response;
+
     private LoggerInterface $log;
 
     public function __construct(ResponseInterface $response, LoggerInterface $log)
@@ -35,5 +35,4 @@ abstract class AbstractController implements ControllerInterface
     }
 
     abstract public function render(array $body): string;
-
 }
